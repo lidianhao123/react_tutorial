@@ -1,7 +1,7 @@
 import React,{ Component, PropTypes } from 'react'
 import { addTodo, toggleDelete } from '../actions'
-import Header from '../components/Header'
-import List from '../components/List'
+import Header from './Header'
+import List from './List'
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +36,8 @@ class App extends Component {
     )
   }
 }
+
+//this.props.store
 App.propTypes = {
   store: PropTypes.object.isRequired
 }
