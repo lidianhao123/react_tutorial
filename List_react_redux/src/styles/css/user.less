@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+.setFont(@name, @px){
+    @{name}: @px / 64 * 1rem;
+}
+@unit:1 / 64 * 1rem;
+
+
+.icon{width: 33px; height: 33px; display: block; background-size: 100% 100%;}
+.icon-delete2{background-image: url(../../images/icon-delete2.png);}
+
+.user-list{
+  margin-top: 20px;
+  .item{
+    position: relative; display: block; height: 50px;font-size: 16px; padding-top: 8.5px; width: 100%; box-sizing: border-box; border-radius: 50px; border:1px solid #5993a4; margin-bottom: 10px;
+    span{float: left; line-height: 33px;}
+    .text{margin-left: 10px;}
+    .icon{margin-left: 30%;}
+  }
+  .item.on{background-color: #286270;}
+  .btn-bind{text-align: center; padding-top: 0; outline: none; background-color: #fe6142; border:0; color: #f1f1f1;}
+  .form-input{
+    padding-left:50px; padding-right: 50px; padding-top: 12.5px;
+    input{color:#f1f1f1; width: 100%;}
+    input::-webkit-input-placeholder{color:#f1f1f1;}
+  }
+  .time{position: absolute; right: 0; top: 0; width: 50px; color:#f1f1f1; line-height: 50px; font-size: 16px; text-align: center;}
+}
+.tips-bind-error{width: 70px; margin:0 auto; color: #fe6142; background-color: #543d3b; font-size: 12px; text-align: center; height: 18px; border-radius: 18px; }
+
+.info{
+  .container{position: relative; background-color: #fff; padding-left: 12px; padding-right: 12px; margin-bottom: 10px;}
+  .item-line{
+    font-size: 16px; line-height: 33px; border-bottom: 1px solid #ebebeb; display: -webkit-box; display: box; padding: 10px 0; position: relative;
+    .label{color: #00001f; margin-right: 10px;}
+    .text{-webkit-box-flex: 1; box-flex: 1; color: #999; text-align: right;}
+    input{display: block; -webkit-box-flex: 1; box-flex: 1; line-height: 33px;}
+    .icon-delete2{margin-left: 10px;}
+    .icon-r-arrow{}
+  }
+  .avatar-line{
+    padding: 20px 0;
+    .avatar{display: block; width: 60px; height: 60px; border-radius: 100%; position: absolute; right: 0; top: 5px;}
+  }
+  .item-line:last-child{border-bottom: none;}
+.btn-green2{width: 100%; border: 0; outline: none; text-align: center; font-size: 18px; padding-top: 10px; padding-bottom: 10px; color: #fff; border-radius: 5px; background-color: #00cccb; line-height: 1.5;display: block; margin: 0 auto;}
+}
+
+
